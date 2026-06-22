@@ -1,5 +1,5 @@
 //IMPORTANDO ARQUIVOD
- import { calcDesconto } from './script_calculos'
+ import { calcDesconto } from './script_calculos.js'
 
 //PEGANDO ELEMENTOS DO DOM
 const formPessoa = document.querySelector('#form-pessoa')
