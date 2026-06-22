@@ -24,6 +24,9 @@ formPessoa.addEventListener('submit', (evt) => {
     //CHAMANDO A FUNÇÃO addPessoa E A PASSANDO O OBJETO LITERAL pessoa
     addPessoa(pessoa)
 
+    //LIMPAR O FORMULÁRIO
+    formPessoa.reset()
+
 })
 
 //CRIANDO A FUNÇÃO ADICIONAR PESSOA 
@@ -32,8 +35,9 @@ const addPessoa = (objPessoa) => {
     pessoas.push(objPessoa)
 
     //APÓS ADICIONAR O OBJETO LITERAL NO ARRAY CHAMA A FUNÇÃO listPessoas
-    listPessoas
+    
     listPessoas()
+
 }
 
 //FUNÇÃO PARA LISTAR PESSOAS DO ARRAY
@@ -41,6 +45,13 @@ const listPessoas = () => {
     //PERCORRER O ARRAY pessoas COM O foreach
     pessoas.forEach((elem, i) => {
         divLista.innerHTML += `${i} - ${elem.nome} - ${elem.idade}, ${elem.renda} <br>`
+   //PERCORRER O ARRAY pessoas COM O foreach
+     pessoas.forEach((elem,i) => {
+        divLista.innerHTML += `${i} - ${elem.nome} - ${elem.idade}, ${elem.renda} <br>`
+     })
+     
     })
 }
+
+
 
