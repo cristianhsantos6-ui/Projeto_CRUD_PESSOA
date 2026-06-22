@@ -6,18 +6,29 @@
     <title>Pessoa - CRUD</title>
 
     <link rel="stylesheet" href="css/style_pessoas.css">
+
+    <script src="js/script_pessoas.js"></script>
+
 </head>
 <body>
     <div id="geral">
     <h3>Cadastro Aluno</h3>
 
-    </div id="div-form-pessoa">
+       <div id="div-regras">
+        <p>Pessoas menor de IDADE ou  renda Menor ou IQUAL a R$ 1700,00 - Isentas de Dsenpenho</p>
+        <p>De R$ 1701,00 Até 5000,00 - Desconto de 5%</p>
+        <p>De R$ 5001,00 Até R$ 8000,00 - Desconto de 10% </p>
+        <p>De R$ 8001,00 Até R$ 12000,00 - Desconto dwe 15%</p>
+        <p>Acima de R$ 12000,00 - Desconto 20%</p>
+
+       </div>
+    <div id="div-form-pessoa">
       <form id="form-pessoa">
          <label for="nome">Nome</label>
          <input type="text" name="nome" id="nome">
 
          <label for="idade">idade</label>
-         <input type="text" name="nome" id="nome">
+         <input type="text" name="idade" id="idade">
 
          <label for="renda">Renda</label>
          <input type="text" name="renda" id="renda">
